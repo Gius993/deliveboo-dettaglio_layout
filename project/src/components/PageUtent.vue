@@ -1,18 +1,34 @@
 <template>
-	<div>
-		<h1>ciao</h1>
+	<div>	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				ciao
+			</div>
+			<div class="col">
+				ciao
+			</div>
+			<div class="col">
+				ciao
+			</div>
+			<div class="col">
+				ciao
+			</div>
+		</div>
+	</div>
 	</div>
   </template>
   
-  <script>
+<script>
+
 
   
   export default {
-	name: 'App',
-	components: {
- 
+    name: "PageUtent",
+    components: { 
+		
 	}
-  }
+}
   </script>
   
   <style lang="scss">
