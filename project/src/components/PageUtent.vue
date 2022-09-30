@@ -14,10 +14,10 @@
 		</div>
 		<!--primi-->
 		<div class="card-title_my">
-			Primi piatti
+			I Nostri Piatti
 		</div>
-		<div class="row">
-			<div class="col-lg-2 col-md-4 col-sm-12" v-for="(component, index) in components" :key="index">
+		<div class="row large_fix_my">
+			<div class="col-lg-3 col-md-4 col-sm-12" v-for="(component, index) in components" :key="index">
 				<div class="card_my">
 				
 					<a href="#">
@@ -34,26 +34,7 @@
 		
 		</div>
 		<!--secondi-->
-		<div class="card-title_my">
-			Secondi Piatti
-		</div>
-		<div class="row">
-			<div class="col-lg-2 col-md-4 col-sm-12" v-for="(second, index) in seconds" :key="index">
-				<div class="card_my">
-				
-					<a href="#">
-						<img :src="second.card_a" alt="image">
-						<div class="name_my">
-							{{second.name}}
-						</div>
-					</a>
-				</div>
-				<div class="add_my">
-					<span>+</span>
-				</div>
-			</div>
 		
-		</div>
 	</div>
 	</div>
   </template>
@@ -83,25 +64,25 @@
 				name: 'kebab',
 				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
           },
-		],
-		seconds: [
-        {
-				name: 'pizza',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-        },
-			{
-				name: 'sushi',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-			{
-				name: 'fritto',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-			{
+          {
 				name: 'kebab',
 				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
           },
-		]
+          {
+				name: 'kebab',
+				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
+          },
+         {
+				name: 'kebab',
+				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
+          },
+          {
+				name: 'kebab',
+				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
+          },
+
+		],
+		
 	}
 	}
 }
@@ -182,4 +163,14 @@
 		padding: 10px;
 		
 	}
+
+	.large_fix_my{
+		width: 80%;
+	}
+
+	@media screen and (max-width: 576px) {
+		.large_fix_my{
+			width: 100%;
+	}
+}
   </style>
