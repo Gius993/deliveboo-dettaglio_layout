@@ -1,23 +1,21 @@
 <template>
   <div id="app">
     <div class="my_class">
-
       <PageUtent />
     </div>
-    <MainComponent />
+   
   </div>
 </template>
 
 <script>
 
 import PageUtent from './components/PageUtent.vue';
-import MainComponent from './components/MainComponent.vue';
+
 
 export default {
   name: 'App',
   components: {
-    PageUtent,
-    MainComponent
+    PageUtent, 
 }
 }
 </script>
@@ -41,7 +39,5 @@ export default {
     font-family: 'IBM Plex Sans', 
     sans-serif;
   }
-  .my_class{
-    display: none;
-  }
+
 </style>
