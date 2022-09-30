@@ -16,7 +16,24 @@ export default {
   name: 'App',
   components: {
     PageUtent, 
-}
+},
+data() {
+  return {
+    products: [],
+    cart: null,
+  }
+},
+fetchCart() {
+  this.$commerce.cart.retrieve().then((cart) => {
+    this.cart = cart;
+  }).catch((error) => {
+    console.log('There is an error fetching the cart', error);
+  });
+},
+created() {
+  this.fetchProducts();
+  this.fetchCart();
+},
 }
 </script>
 

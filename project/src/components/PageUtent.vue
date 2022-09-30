@@ -1,5 +1,6 @@
 <template>
 	<div>	
+
 	<div class="background_my"></div>
 	<div class="container">
 		<div class="font_title_my">
@@ -33,64 +34,72 @@
 			</div>
 		
 		</div>
-		<!--secondi-->
-		
+		<div class="cart_my">
+			<CartComponent />
+		</div>
 	</div>
+	
 	</div>
   </template>
   
 <script>
 
+import CartComponent from './CartComponent.vue';
 
   
   export default {
     name: "PageUtent",
-	data() {
-      return{
-        components: [
-        {
-				name: 'pizza',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-        },
-			{
-				name: 'sushi',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-			{
-				name: 'fritto',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-			{
-				name: 'kebab',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-          {
-				name: 'kebab',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-          {
-				name: 'kebab',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-         {
-				name: 'kebab',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-          {
-				name: 'kebab',
-				card_a: 'https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg',
-          },
-
-		],
-		
-	}
-	}
+    comments: {
+        CartComponent
+    },
+    data() {
+        return {
+            components: [
+                {
+                    name: "pizza",
+                    card_a: "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg",
+                },
+                {
+                    name: "sushi",
+                    card_a: "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg",
+                },
+                {
+                    name: "fritto",
+                    card_a: "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg",
+                },
+                {
+                    name: "kebab",
+                    card_a: "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg",
+                },
+                {
+                    name: "kebab",
+                    card_a: "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg",
+                },
+                {
+                    name: "kebab",
+                    card_a: "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg",
+                },
+                {
+                    name: "kebab",
+                    card_a: "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg",
+                },
+                {
+                    name: "kebab",
+                    card_a: "https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg",
+                },
+            ],
+        };
+    },
+    components: { CartComponent }
 }
   </script>
   
   <style lang="scss">
  /* eslint-disable */
 	@import "../assets/variable.scss";
+	.container_my{
+		display: flex;
+	}
 	.background_my{
 		background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/1c/1b/3a/8d/il-sushi-party-che-abbiamo.jpg');
 		background-repeat: no-repeat;
